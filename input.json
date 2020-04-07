@@ -1,0 +1,35 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://poc.com/product.schema.json",
+  "title": "previewInput",
+  "description": "Preview input schema for preview request",
+  "type": "object",
+  "properties": {
+    "previewInput": {
+      "type": "object",
+      "properties": {
+        "assetID": {
+          "description": "The unique identifier for an asset",
+          "type": "integer"
+        },
+        "cms": {
+          "description": "type of CMS",
+          "type": "string"
+        },
+        "previewTargetLocale": {
+          "description": "translation target locale",
+          "type": "string"
+        },
+        "S3url": {
+          "description": "S3url for denormalized translated asset",
+          "type": "string"
+        },
+        "cmsSrcUrl": {
+          "description": "type of CMS",
+          "type": "string"
+        }
+      }
+    }
+  },
+  "required": ["previewInput"]
+}
