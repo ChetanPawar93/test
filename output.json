@@ -8,12 +8,12 @@
     "previewOutput": {
       "type": "object",
       "properties": {
-        "parameter1": {
-          "description": "The unique identifier for a project",
-          "type": "integer"
+        "status": {
+          "description": "Status of preview",
+          "type": "string"
         },
-        "parameter2": {
-          "description": "Title of project",
+        "errorMsg": {
+          "description": "error message in case of failure",
           "type": "string"
         }
       }
